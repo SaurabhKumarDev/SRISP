@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | SR INTERNET | JanitorIMBS  2.0</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <header>
+        <div class="left-side">
+            <img src="Image/logo.png" alt="logo-picture">
+        </div>
+        <nav>
+            <ul class="navbar-urls">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">AboutUs</a></li>
+                <li><a href="#pricing">Packages</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="navSingleLink-Opacity"><a href="subscriber_login.html" class="navLink-style-change">Subscriber Login</a></li>
+            </ul>
+        </nav>
+        <div class="container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="credential">
+                <h1>SR INTERNET</h1>
+                <h2>Shri Ram Internet Service Provider</h2>
+                <div class="hero-link">
+                    <a href="site_login.html">Admin Login <span>&rarr;</span></a>
+                    <a href="subscriber_login.html">Subscriber Login <span>&rarr;</span></a>
+                </div>
+            </div>
+            <div class="hero-right-image">
+                <img src="Image/hero-img.png" alt="picture">
+            </div>
+        </section>
+
+        <a class="top-link hide" href="#" id="js-top">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6"><path d="M12 6H0l6-6z"/></svg>
+        </a>
+
+        <section class="about" id="about">
+            <div class="about-left">
+                <h5>WHO WE ARE</h5>
+                <h2>About Our Company</h2>
+                <p>
+                    This policy covers the way Shri Ram Internet Provider treats personal information that the Company receives and collects, including 
+                    information related to Customer's past use of the Company's products and services. Personal information means information about Customers 
+                    which identifies them like Customer's name, address, e-mail address, phone number etc.
+                </p>
+                <h5>COLLECTION AND GENERAL USE OF PERSONAL INFORMATION</h5>
+                <p>
+                    The Company collects personal information when customer registers for the purpose of using Company's products , 
+                    when the Customer registers for visit the Company web pages or the pages of certain partners of the Company. 
+                    The Company may mutually use personal information that is obtained from business partners or other Companies. 
+                    The Company has the right to deliver the Customer's information to its business associates, franchisees without referring the same to the Customer. 
+                    <br><br> 
+                    When the Customer registers with the Company, the Company receives information about the Customer's name, telephone number, e-mail address, 
+                    P.O. address, birth date, gender, occupation, industry, and personal interests and any other ID related to the specific service Customer applies 
+                    for. When the Customer registers with the Company and sign in to Company's services, the Customer acquires a status of valued one. 
+                    The Company collects information about Customer's transactions with the Company and its business partners included. Information is collected 
+                    about Customer's use of the demanded products. The Company can use this information to customize its products. The same includes anonymous 
+                    reporting for internal and external clients. 
+                </p>
+                <h5>SHARING AND DISCLOSURE OF PERSONAL INFORMATION</h5>
+                <p>
+                    The Company does not share personal information about the Customer with other parties.
+                </p>
+                <h5>CHANGES OF PRIVACY POLICY</h5>
+                <p>The Company may update this policy and display the same in its website without notice to the Customer and such posting will be deemed to have been read by the the Customer.</p>
+            </div>
+            <div class="about-right">
+                <img src="Image/about.jpg" alt="picture">
+            </div>
+        </section>
+    
+        <section class="pricing" id="pricing">
+            <h4>PRICING</h4>
+            <h1>Check our Pricing</h1>
+        </section>
+    
+        <section class="Contact pricing" id="contact">
+            <h4>CONTACT</h4>
+            <h1>Contact Us</h1>
+            <div class="contact-flex">
+                <div class="text">
+                    <p>
+                        Google Maps Platform rejected your request. 
+                        This IP, site or mobile application is not authorized to use this API key. 
+                        Request received from IP address 103.146.111.236, with referer: https://srisp.com/
+                    </p>
+                </div>
+                <div class="location contact-box">
+                    <div class="one-more-flex">
+                        <address class="address contact-box-style">
+                            <span>
+                                <i class="fa fa-map-marker" style="color: brown;"></i>
+                            </span>
+                            <h4>Address</h4>
+                            <p>KHASRA NO-4331/,FLAT NO-14,SKHUNTLA APARTMENT,RANI KHERA ROAD,MUNDKA,DELHI-110086</p>
+                        </address>
+                        <div class="phone contact-box-style">
+                            <span>
+                                <i class="material-icons">call</i>
+                            </span>
+                            <h4>Call Us</h4>
+                            <p>7210363680</p>
+                        </div>
+                        <div class="mail contact-box-style">
+                            <span>
+                                <i class="fa fa-envelope"></i>
+                            </span>
+                            <h4>Email Us</h4>
+                            <p>srinfotech9238@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="form">
+                        <form action="" name="home-contact" onsubmit="validate(); return false;">
+                            <input type="text" name="name" placeholder="Full Name" id="fullName" class="inputBox">
+                            <input type="email" name="mail" placeholder="Email" id="email" class="inputBox" >
+                            <input type="tel" name="phone" placeholder="Mobile Number" id="mob" class="inputBox" >
+                            <textarea name="address" placeholder="Address" id="address" cols="30" rows="3"></textarea>
+                            <textarea name="message" placeholder="Message" id="Message" cols="30" rows="3"></textarea>
+                            <div class="captcha">
+                                <input type="text" name="captcha" placeholder="Captcha Code" id="Captcha" class="inputBox" ><br>
+                                <img src="Image/captcha1.jpeg" alt="captcha" id="captcha-image">
+                                <i class="material-icons" id="refresh">loop</i>
+                            </div>
+                            <button type="submit" class="form-submit-button">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="copyRight">&#169; Copyright <a href="https://github.com/SaurabhKumarDev">Saurabh</a>. All Rights Reserved</p>
+        <a href="privacy_policy" class="footer-pp">Privacy & Policy</a>
+    </footer>
+</body>
+</html>
+
+<!-- Script -->
+<script>
+
+    function myFunction(x) {
+        x.classList.toggle("change");
+    }
+
+    // Importing tag's
+    const fullName = document.querySelector('#fullName'); 
+    const email = document.querySelector('#email'); 
+    const mob = document.querySelector('#mob'); 
+    const address = document.querySelector('#address'); 
+    const Message = document.querySelector('#Message'); 
+    const Captcha = document.querySelector('#Captcha'); 
+    const refresh = document.querySelector("#refresh");
+    const captchaIMG = document.querySelector("#captcha-image");
+
+    // Validation
+    function validate() {
+        const fName = document.forms["home-contact"]["name"].value;
+        const fMail = document.forms["home-contact"]["mail"].value;
+        const fPhone = document.forms["home-contact"]["phone"].value;
+        const fAddress = document.forms["home-contact"]["address"].value;
+        const fMessage = document.forms["home-contact"]["message"].value;
+        const fCaptcha = document.forms["home-contact"]["captcha"].value;
+
+        if (fName == "" || fMail == "" || fPhone=="" || fAddress == "" || fMessage == "" || fCaptcha == "") {
+            alert("Necessary to fill all details");
+        } else {
+            alert("Successfully logged in");
+            fullName.value = email.value = mob.value = address.value = Message.value = Captcha.value = '';
+        }
+    }
+
+    // Event listener : Change the captcha
+    refresh.addEventListener('click', function() {
+        let random = Math.floor((Math.random() * 6) + 1);
+        captchaIMG.setAttribute('src',`Image/captcha${random}.jpeg`);
+    })
+
+    // ToDo : Entered captcha is same or not
+
+    // Text of captcha
+    // function helper() {
+    //     switch (random) {
+    //         case 1: 
+    //             captcha1 = 'I46l6';
+    //             break;
+    //         case 2:
+    //             captcha2 = 'ZIHqS';
+    //             break;
+    //         case 3:
+    //             captcha3 = '5fjer';
+    //             break;
+    //         case 4:
+    //             captcha4 = 'SM1Hq';
+    //             break;
+    //         case 5:
+    //             captcha5 = 'gbGum';
+    //             break;
+    //         case 6:
+    //             captcha6 = '7mhpB';
+    //             break;
+    //     }
+    // }
+</script>

@@ -1,0 +1,456 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    color: black;
+    background-color: white;
+    font-family: "Nunito", sans-serif;
+}
+
+
+/*------------- Back to top -------------*/
+.top-link {
+    transition: .25s all ease-in-out;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: inline-flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1em 1em 0;
+    border-radius: 25%;
+    padding: .5em;
+    width: 40px;
+    height: 40px;
+    background-color: #F8F8F8;
+}
+
+
+/* *****----------****** Nav Bar *****-----------***** */
+
+.container {
+    display: none;
+}
+
+header {
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+    height: 5rem;
+    align-items: center;
+    gap: 20%;
+    background-color: white;
+    box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
+    width: 100%;
+    position: sticky;
+    top: -5px;
+}
+
+.left-side img {
+    height: 3.4rem;
+}
+
+.navbar-urls {
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.navbar-urls li {
+    list-style: none;
+}
+
+.navbar-urls li a {
+    text-decoration: none;
+}
+
+.navbar-urls li a:hover {
+    color: #0000ffbf;
+}
+
+.navLink-style-change {
+    color: white;
+    border-radius: 6px;
+    background-color: #0000ffbf;
+    padding: 10px;
+}
+
+.navLink-style-change:hover {
+    color: white;
+}
+
+.navSingleLink-Opacity:hover {
+    opacity: 0.6;
+}
+
+
+/* *****----------****** Main *****-----------***** */
+
+/* ************ Section 1 ************ */
+
+.hero, .about {
+    display: flex;
+    justify-content: space-around;
+    gap: 15rem;
+    align-items: center;
+    height: 90vh;
+    flex-direction: row;
+}
+
+.credential h1{
+    font-size: 2.5rem;
+    color: rgba(25, 25, 185, 0.679);
+    margin-bottom: 1.4rem;
+}
+
+.credential h2 {
+    font-weight: 400;
+    opacity: 0.7;
+    margin-bottom: 2.4rem;
+}
+
+.hero-link a{
+    box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: #0000ffbf;
+    padding: 15px;
+    border-radius: 7px;
+}
+
+.hero-link:hover.span {
+    transition: 0.5s all;
+    margin-right: 13px;
+}
+
+
+/* ************ Section 2 ************ */
+
+.about {
+    gap: 0;
+    justify-content:center;
+    height: max-content;
+    margin: 0 8rem;
+}
+.about-left {
+    background-color: #f6f9ff;;
+    width: 100%;
+    padding: 0 2rem;
+    padding-top: 1.5rem;
+}
+
+.about-left h5 {
+    color: rgba(0, 0, 255, 0.681);
+    opacity: 0.7;
+    line-height: 3rem;
+}
+
+.about-left h2 {
+    font-weight: 400;
+    color: darkblue;
+    line-height: 3.5rem;
+}
+
+.about-left p {
+    line-height: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.about-right img {
+    height: 30rem;
+}
+
+
+/* ************ Section 3 - Pricing ************ */
+
+.pricing{
+    margin: 3rem;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.pricing h4 {
+    color: #0000ffbf;
+    line-height: 2rem;
+}
+
+.pricing h1 {
+    font-size: 2rem;
+    margin-bottom: 4rem;
+}
+
+
+/* ************ Section 4 - Contact ************ */
+
+
+/* Under Maintenacnce */
+.contact-flex {
+    margin: 2rem;
+}
+
+.text {
+    margin-bottom: 1rem;
+    height: 15rem;
+    /* width: 40%; */
+    line-height: 1.5rem;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    text-align: left;
+    padding: 8px;
+}
+
+.location {
+    display: flex;
+    gap: 10px;
+}
+
+.one-more-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 50%;
+    gap: 1rem;
+}
+
+.one-more-flex span i {
+    font-size: 35px;
+    color:brown;
+    margin-bottom: 1rem;
+}
+
+.form {
+    width: 50%;
+    background-color: #fafbff;
+    padding: 10px;
+}
+
+address.address {
+    width: 100%;
+}
+
+.phone,.mail {
+    width: 35%;
+    text-align: left;
+}
+
+.address,.phone,.mail {
+    background-color: #fafbff;
+    border-radius: 5px;
+    height: 8rem;
+    padding: 2rem;
+}
+
+.address span {
+    color: blue;
+    background-color: transparent;
+}
+
+.form form input,textarea {
+    padding: 10px;
+    border-radius: 3px;
+    margin-bottom: 13px;
+    border: 2px solid rgb(81, 73, 62);
+}
+
+#fullName,#email {
+    width: 19vw;
+}
+
+#mob,#address,#Message {
+    width: 40vw;
+}
+
+.form-submit-button {
+    border: 0;
+    border-radius: 12px;
+    padding: 13px 8rem;
+    color: white;
+    background-color: black;
+}
+
+.form-submit-button:hover {
+    background-color: rgb(62, 20, 188);
+    color: white;
+}
+
+.form form img {
+    display: inline;
+}
+
+.captcha {
+    display: flex;
+    gap: 30px;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.captcha img {
+    height: 2.5rem;
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    cursor: pointer;
+}
+
+/*  Under Maintenance */
+
+/* Footer */
+
+footer {
+    background-color: #fafbff;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 16px;
+}
+
+footer p,a {
+    line-height: 2rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: blueviolet;
+}
+
+.footer-pp {
+    font-size: small;
+    color: rgb(79, 79, 173);
+}
+
+footer a:hover {
+    opacity: 0.5;
+}
+
+
+/**************** Login - site_login.html *******************/
+
+.lg-flex {
+    display: flex;
+}
+
+.lg-detail {
+    width: 50%;
+}
+
+.lg-detail nav img {
+    height: 70px;
+    margin: 2rem 0 0 2.5rem;
+}
+
+.login {
+    margin: 4rem 8rem 0rem 8rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.login h1 {
+    line-height: 6rem;
+    font-size: 55px;
+}
+.login h1 span {
+    color: blue;
+    font-size: 25px;
+}
+
+.login-site {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-site label {
+    margin-top: 1.5rem;
+    line-height: 2.5rem;
+    opacity: 0.8;
+    font-weight: bold;
+}
+
+.login-site input {
+    border: 0;
+    font-size: 16px;
+    border-bottom: 2px solid black;
+    padding: 10px;
+    padding-left: 0;
+    width: 100%;
+}
+
+.lg-flex-pass {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lg-flex-pass a {
+    margin-top: 1.5rem;
+    text-decoration: none;
+    color: blueviolet;
+}
+
+.lg-flex-pass a:hover {
+    text-decoration: underline;
+}
+
+.lg-flex-left {
+    justify-content: left;
+}
+
+#remember {
+    width: max-content;
+    height: 15px;
+    width: 25px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.lg-submit-btn {
+    margin-top: 2rem;
+    width: 100%;
+    padding: 13px;
+    background-color: blue;
+    border-radius: 20px;
+    color: white;
+    font-size: 16px;
+    border: none;
+    opacity: 0.7;
+}
+
+.lg-submit-btn:hover {
+    opacity: 1;
+}
+
+.lg-quote-right {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 100vh;
+    background-color: rgb(47, 47, 97);
+    text-align: center;
+    color: white;
+    line-height: 3rem;
+    font-size: 35px;
+    font-weight: 400;
+}
+
+/* *********************** End - Login Page ******************* */

@@ -1,0 +1,219 @@
+/* ***************************************** RESPONSIVE ******************************************** */
+
+@media screen and (max-width: 1230px) {
+    .hero, .about {
+        gap: 0;
+    }
+
+    .about {
+        margin: 0 2rem;
+    }
+
+    .about-right img {
+        height: auto;
+        width: 40rem;
+    }
+
+    #fullName, #email, #mob, #address, #Message {
+        width: 96%;
+    }
+
+    .form form input, textarea {
+        padding: 10px 2%;
+    }
+
+    .captcha {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 1160px) {
+    .phone, .mail {
+        width: 100%;
+        text-align: center  ;
+    }
+
+    .address, .phone, .mail {
+        height: 7rem;
+        padding: 1rem;
+    }
+
+    .pricing {
+        margin: 3rem 0;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .hero {
+        flex-direction: column;
+        justify-content: center;
+        gap: 15vh;
+    }
+
+    .about-right img {
+        height: auto;
+        width: 30rem;
+    }
+
+    .one-more-flex span i {
+        margin-bottom: 0.5rem;
+    }
+
+    .one-more-flex span i { 
+        font-size: 20px;
+    }
+
+    .captcha {
+        gap: 15px; 
+    }
+
+    .lg-quote-right {
+        display: none;
+    }
+
+    .lg-flex {
+        flex-direction: column;
+    }
+
+    .lg-detail {
+        width: 100%;
+    }
+
+    .lg-detail nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 20vh;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .credential {
+        text-align: center;
+    }
+
+    .about {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .about-left {
+        padding: 0;
+    }
+
+    .about-left h2 {
+        margin-left: 1rem;
+    }
+
+    .about-left h5 {
+        margin-left: 1rem;
+    }
+
+    .about-left p {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .captcha {
+        gap: 2px;
+    }
+
+    .about-right img {
+        height: auto;
+        width: 100%;
+    }
+
+    .contact-flex {
+        margin: 2rem 1rem;
+    }
+
+    .pricing h1 {
+        margin-bottom: 2rem;
+    }
+
+    header {
+        justify-content: space-between;
+    }
+
+    .left-side {
+        margin-left: 1.5rem;
+    }
+
+    nav {
+        display: none;
+    }
+
+
+    /* Hamburger */
+    .container {
+        display: inline-block;
+        margin-right: 1.5rem;
+        cursor: pointer;
+    }
+
+    .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #333;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+
+    /* Rotate first bar */
+    .change .bar1 {
+        transform: translate(0, 11px) rotate(-45deg);
+    }
+
+    /* Fade out the second bar */
+    .change .bar2 {opacity: 0;}
+
+    /* Rotate last bar */
+    .change .bar3 {
+        transform: translate(0, -11px) rotate(45deg);
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .location {
+        flex-direction: column;
+    }
+
+    .one-more-flex {
+        width: 100%;
+    }
+
+    .one-more-flex span i {
+        font-size: 35px;
+    }
+
+    .address, .phone, .mail {
+        height: auto;
+        padding: 2rem;
+    }
+
+    .form {
+        width: 100%;
+        padding: 0;
+    }
+
+    .form form input, textarea {
+        padding: 16px 2%;
+        font-size: 16px;
+    }
+
+    .form form {
+        padding: 1rem;
+    }
+
+    .captcha {
+        gap: 10px;
+    }
+
+    .hero-right-image img {
+        height: 25rem;
+    }
+
+    .login {
+        margin: 4rem;
+    }
+}

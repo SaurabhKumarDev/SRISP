@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRISP | Janitor IMBS 2.0</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <div class="lg-flex">
+        <div class="lg-detail">
+            <nav>
+                <a href="index.html"><img src="Image/logo.png" alt="logo"></a> 
+            </nav>
+            <div class="login">
+                <h1>Login <span>Subscriber</span></h1>
+                <p id="forJS"></p>
+                <form action="" name="loginForm"  onsubmit="error(); return false;" class="login-site">
+                    <label for="lg-email">Username</label>
+                    <input type="email" name="email" placeholder="Username" id="lg-email"> <br>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" placeholder="Password" id="password"> <br> <br>
+                    <div class="lg-flex-left">
+                        <input type="checkbox" name="remember" placeholder="Remember" id="remember"> 
+                        <label for="remember">Remember Me</label> 
+                    </div>
+                    <button type="submit" class="lg-submit-btn">Login</button>
+                </form>
+            </div>
+        </div>
+        <div class="lg-quote-right">
+            <p><img src="Image/subscriber.png" height="150px" alt=""></p>
+            <p>Subscriber Portal</p>
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- Script -->
+<script>
+
+    // Using Style sheet in js for set the width of the input box
+    const email = document.getElementById("lg-email");
+    email.style.outlineWidth = 0;
+    const password = document.getElementById("password");
+    password.style.outlineWidth = 0;
+
+    // Output 
+    const result = document.querySelector('#forJS');
+    result.style.color = 'red';
+
+    function error() {
+        const mail = document.forms["loginForm"]["email"].value;
+        const password = document.forms["loginForm"]["password"].value;
+        
+        if (mail == "" || password == "") {
+            result.innerHTML = "* Mandatory to complete all input fields.";
+        } else {
+            // Reset : input field
+            email.value = password.value = '';
+        }
+    }
+</script>
