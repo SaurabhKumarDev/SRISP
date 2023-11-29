@@ -262,11 +262,11 @@ address.address {
 }
 
 #fullName,#email {
-    width: 19vw;
+    width: 45%;
 }
 
 #mob,#address,#Message {
-    width: 40vw;
+    width: 93%;
 }
 
 .form-submit-button {
